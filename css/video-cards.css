@@ -1,0 +1,391 @@
+/* 
+ * Video Cards CSS for Tazayed Investment Platform
+ * This stylesheet contains styles specific to the video-first card design
+ */
+
+/* Video Cards Grid */
+.video-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .video-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .video-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Video Card */
+.video-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Video Thumbnail */
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.video-thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.video-card:hover .video-thumbnail img {
+    transform: scale(1.05);
+}
+
+/* Play Button */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.play-button i {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 4px; /* Slight adjustment for play icon */
+}
+
+.video-card:hover .play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Video Duration */
+.video-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Company Status */
+.company-status {
+    padding: 1rem 1.5rem 0;
+}
+
+.status-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #e6f7f2;
+    color: #00a67e;
+}
+
+.status-tag.growth {
+    background-color: #e6f0ff;
+    color: #3366ff;
+}
+
+/* Company Info */
+.company-name {
+    padding: 0.5rem 1.5rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.company-location {
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.company-location i {
+    margin-left: 8px;
+    color: #999;
+}
+
+.company-tags {
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: #f5f5f5;
+    color: #555;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.company-description {
+    padding: 0.5rem 1.5rem;
+    margin: 0;
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Company Metrics */
+.company-metrics {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #f0f0f0;
+    margin-top: auto;
+}
+
+.company-metrics .metric {
+    display: flex;
+    flex-direction: column;
+}
+
+.metric-label {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.metric-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.metric-value i {
+    color: #00a67e;
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+
+/* Button */
+.video-card .btn {
+    margin: 0;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Video Carousel */
+.latest-videos {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+}
+
+.carousel-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-controls button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-controls button:hover {
+    background-color: #f5f5f5;
+}
+
+.video-carousel {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+
+.video-carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.carousel-item {
+    min-width: 300px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.carousel-item .video-thumbnail {
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.carousel-item .play-button {
+    width: 50px;
+    height: 50px;
+}
+
+.video-info {
+    padding: 1rem;
+}
+
+.video-info h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.video-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Video Categories */
+.video-categories {
+    padding: 4rem 0;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.category-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.category-video {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
+.category-video img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-content {
+    padding: 1.5rem;
+}
+
+.category-content h3 {
+    margin: 0 0 1rem;
+    font-size: 1.3rem;
+}
+
+.category-content p {
+    margin: 0 0 1.5rem;
+    color: #555;
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    .video-card {
+        background-color: #1a1a1a;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .company-name {
+        color: #fff;
+    }
+    
+    .company-location {
+        color: #aaa;
+    }
+    
+    .tag {
+        background-color: #333;
+        color: #ddd;
+    }
+    
+    .company-description {
+        color: #bbb;
+    }
+    
+    .company-metrics {
+        border-top: 1px solid #333;
+    }
+    
+    .metric-label {
+        color: #999;
+    }
+    
+    .metric-value {
+        color: #eee;
+    }
+    
+    .carousel-item, .category-card {
+        background-color: #1a1a1a;
+    }
+    
+    .video-info h3, .category-content h3 {
+        color: #fff;
+    }
+    
+    .video-info p, .category-content p {
+        color: #aaa;
+    }
+}

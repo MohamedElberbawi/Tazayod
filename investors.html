@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المستثمرون - تزايد</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/video-cards.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="تزايد">
+                    <span>تزايد</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="companies.html">الشركات</a></li>
+                    <li><a href="investors.html" class="active">المستثمرون</a></li>
+                    <li><a href="how-it-works.html">كيف نعمل</a></li>
+                    <li><a href="about-us.html">من نحن</a></li>
+                </ul>
+            </nav>
+            <div class="search-toggle">
+                <button aria-label="بحث"><i class="fas fa-search"></i></button>
+                <div class="search-dropdown">
+                    <input type="text" placeholder="ابحث عن المستثمرين...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">تسجيل الدخول</a>
+                <a href="#" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-investors">
+        <div class="container">
+            <div class="hero-content">
+                <h1>مجتمع المستثمرين</h1>
+                <p>انضم إلى شبكة من المستثمرين ذوي الخبرة والرؤية للاستثمار في أفضل الشركات الناشئة في المنطقة.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">انضم كمستثمر</a>
+                    <a href="#investor-types" class="btn btn-secondary">تعرف على أنواع المستثمرين</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investor Benefits Section -->
+    <section class="investor-benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>مزايا الاستثمار مع تزايد</h2>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>فرص استثمارية مُدققة</h3>
+                    <p>نقوم بتقييم شامل لكل شركة ناشئة قبل عرضها على منصتنا، مما يضمن لك الاستثمار في شركات ذات إمكانات نمو حقيقية.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>شبكة من المستثمرين</h3>
+                    <p>انضم إلى مجتمع من المستثمرين ذوي الخبرة للتعاون في الصفقات وتبادل الرؤى والخبرات في مجال الاستثمار.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>حماية قانونية</h3>
+                    <p>نوفر هيكلة قانونية متكاملة لكل استثمار، مع عقود موحدة وشروط واضحة تحمي حقوق جميع الأطراف.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>تقارير أداء دورية</h3>
+                    <p>احصل على تقارير منتظمة عن أداء استثماراتك، مع تحليلات مفصلة ومؤشرات النمو الرئيسية.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>فعاليات حصرية</h3>
+                    <p>دعوات لحضور فعاليات وورش عمل حصرية للمستثمرين، للتواصل مع رواد الأعمال والخبراء في المجال.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>موارد تعليمية</h3>
+                    <p>مكتبة من الموارد التعليمية والأدوات لمساعدتك على اتخاذ قرارات استثمارية مدروسة وفهم ديناميكيات السوق.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investor Types Section -->
+    <section id="investor-types" class="investor-types">
+        <div class="container">
+            <div class="section-header">
+                <h2>أنواع المستثمرين</h2>
+            </div>
+            
+            <div class="types-grid">
+                <!-- Investor Type 1 -->
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>مستثمر ملاك</h3>
+                    <p>مستثمرون أفراد يقدمون رأس المال للشركات الناشئة في مراحلها المبكرة، غالباً مقابل حصة ملكية أو دين قابل للتحويل.</p>
+                    <ul class="type-features">
+                        <li>استثمارات تتراوح بين $10,000 و $100,000</li>
+                        <li>مشاركة فعالة في توجيه الشركات</li>
+                        <li>خبرة في مجالات محددة</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">تعرف على المزيد</a>
+                </div>
+                
+                <!-- Investor Type 2 -->
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>شركات رأس المال المغامر</h3>
+                    <p>شركات متخصصة في الاستثمار في الشركات الناشئة ذات إمكانات النمو العالية، وتقدم التمويل والدعم الاستراتيجي.</p>
+                    <ul class="type-features">
+                        <li>استثمارات تتراوح بين $1 مليون و $10 مليون</li>
+                        <li>تمثيل في مجلس الإدارة</li>
+                        <li>شبكة واسعة من العلاقات</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">تعرف على المزيد</a>
+                </div>
+                
+                <!-- Investor Type 3 -->
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>التمويل الجماعي</h3>
+                    <p>منصات تتيح للمستثمرين الأفراد المشاركة في تمويل الشركات الناشئة بمبالغ صغيرة نسبياً، مما يوفر فرصاً للاستثمار بمخاطر محدودة.</p>
+                    <ul class="type-features">
+                        <li>استثمارات تبدأ من $1,000</li>
+                        <li>تنويع المحفظة الاستثمارية</li>
+                        <li>سهولة الدخول والخروج</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">تعرف على المزيد</a>
+                </div>
+                
+                <!-- Investor Type 4 -->
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>المستثمرون المؤسسيون</h3>
+                    <p>صناديق التقاعد وشركات التأمين والمؤسسات المالية الكبرى التي تخصص جزءاً من محافظها للاستثمار في الشركات الناشئة.</p>
+                    <ul class="type-features">
+                        <li>استثمارات تتجاوز $10 مليون</li>
+                        <li>استراتيجيات استثمار طويلة الأمد</li>
+                        <li>معايير حوكمة صارمة</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">تعرف على المزيد</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Investors Section -->
+    <section class="featured-investors">
+        <div class="container">
+            <div class="section-header">
+                <h2>مستثمرون بارزون</h2>
+            </div>
+            
+            <div class="investors-grid">
+                <!-- Investor 1 -->
+                <div class="investor-card">
+                    <div class="investor-image">
+                        <img src="images/investors/investor1.jpg" alt="محمد الفهد">
+                    </div>
+                    <div class="investor-content">
+                        <h3>محمد الفهد</h3>
+                        <p class="investor-title">مؤسس شركة الفهد للاستثمار</p>
+                        <p class="investor-bio">مستثمر ملاك نشط مع خبرة تزيد عن 15 عاماً في مجال التكنولوجيا المالية والتجارة الإلكترونية. استثمر في أكثر من 30 شركة ناشئة، مع 5 عمليات تخارج ناجحة.</p>
+                        <div class="investor-stats">
+                            <div class="stat">
+                                <span class="stat-value">30+</span>
+                                <span class="stat-label">استثمار</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">5</span>
+                                <span class="stat-label">تخارج</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">15x</span>
+                                <span class="stat-label">متوسط العائد</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Investor 2 -->
+                <div class="investor-card">
+                    <div class="investor-image">
+                        <img src="images/investors/investor2.jpg" alt="سارة العمري">
+                    </div>
+                    <div class="investor-content">
+                        <h3>سارة العمري</h3>
+                        <p class="investor-title">شريك في صندوق المستقبل للاستثمار</p>
+                        <p class="investor-bio">متخصصة في الاستثمار في شركات التكنولوجيا الصحية والتعليم. قادت جولات استثمارية بقيمة إجمالية تتجاوز $50 مليون في الشرق الأوسط وشمال أفريقيا.</p>
+                        <div class="investor-stats">
+                            <div class="stat">
+                                <span class="stat-value">20+</span>
+                                <span class="stat-label">استثمار</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">3</span>
+                                <span class="stat-label">تخارج</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">$50M+</span>
+                                <span class="stat-label">قيمة الاستثمارات</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Investor 3 -->
+                <div class="investor-card">
+                    <div class="investor-image">
+                        <img src="images/investors/investor3.jpg" alt="أحمد الزبيدي">
+                    </div>
+                    <div class="investor-content">
+                        <h3>أحمد الزبيدي</h3>
+                        <p class="investor-title">مؤسس مشارك في شركة تيك فينشرز</p>
+                        <p class="investor-bio">رائد أعمال سابق تحول إلى مستثمر، متخصص في شركات التكنولوجيا في مرحلة النمو. ساهم في تأسيس 3 شركات ناشئة ناجحة قبل التحول للاستثمار.</p>
+                        <div class="investor-stats">
+                            <div class="stat">
+                                <span class="stat-value">15+</span>
+                                <span class="stat-label">استثمار</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">3</span>
+                                <span class="stat-label">شركات مؤسسة</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">20x</span>
+                                <span class="stat-label">أعلى عائد</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>آراء المستثمرين</h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"منصة تزايد غيرت طريقة استثماري في الشركات الناشئة. الفرص المعروضة مدروسة بعناية، والدعم المقدم للمستثمرين استثنائي."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/investors/testimonial1.jpg" alt="خالد المنصور">
+                        <div>
+                            <h4>خالد المنصور</h4>
+                            <p>مستثمر ملاك</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"أقدر الشفافية والمهنية العالية التي تتميز بها منصة تزايد. التقارير الدورية والمتابعة المستمرة تجعل عملية الاستثمار سلسة وواضحة."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/investors/testimonial2.jpg" alt="لينا القاسم">
+                        <div>
+                            <h4>لينا القاسم</h4>
+                            <p>مديرة استثمار، صندوق الابتكار</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"الفعاليات والورش التي تنظمها تزايد توفر فرصاً قيمة للتواصل مع رواد الأعمال والمستثمرين الآخرين، مما يساعد في بناء شبكة علاقات قوية."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/investors/testimonial3.jpg" alt="عمر الحارثي">
+                        <div>
+                            <h4>عمر الحارثي</h4>
+                            <p>مستثمر مؤسسي</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>هل أنت مستعد للاستثمار في مستقبل المنطقة؟</h2>
+            <p>انضم إلى مجتمع المستثمرين في تزايد واكتشف فرصاً استثمارية واعدة في أفضل الشركات الناشئة.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">انضم كمستثمر</a>
+                <a href="companies.html" class="btn btn-secondary">استكشف الشركات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/logo.svg" alt="تزايد" class="footer-logo">
+                    <p>منصة تزايد تربط المستثمرين بالشركات الناشئة الواعدة في الشرق الأوسط وشمال أفريقيا، مع التركيز على الشفافية والأمان.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="companies.html">الشركات</a></li>
+                        <li><a href="investors.html">المستثمرون</a></li>
+                        <li><a href="how-it-works.html">كيف نعمل</a></li>
+                        <li><a href="about-us.html">من نحن</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>القطاعات</h3>
+                    <ul>
+                        <li><a href="#">التكنولوجيا</a></li>
+                        <li><a href="#">الرعاية الصحية</a></li>
+                        <li><a href="#">التكنولوجيا المالية</a></li>
+                        <li><a href="#">التجارة الإلكترونية</a></li>
+                        <li><a href="#">التعليم</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>تواصل معنا</h3>
+                    <p><i class="fas fa-envelope"></i> info@tazayed.com</p>
+                    <p><i class="fas fa-phone"></i> +971 4 123 4567</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 تزايد. جميع الحقوق محفوظة.</p>
+                <div class="footer-legal">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

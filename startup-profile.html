@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء ملف شركة - تزايد</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/video-cards.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="تزايد">
+                    <span>تزايد</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="companies.html">الشركات</a></li>
+                    <li><a href="investors.html">المستثمرون</a></li>
+                    <li><a href="how-it-works.html">كيف نعمل</a></li>
+                    <li><a href="about-us.html">من نحن</a></li>
+                </ul>
+            </nav>
+            <div class="search-toggle">
+                <button aria-label="بحث"><i class="fas fa-search"></i></button>
+                <div class="search-dropdown">
+                    <input type="text" placeholder="ابحث عن الشركات...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">تسجيل الدخول</a>
+                <a href="#" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-startup">
+        <div class="container">
+            <div class="hero-content">
+                <h1>إنشاء ملف شركتك الناشئة</h1>
+                <p>أنشئ ملف شركتك الناشئة على منصة تزايد واعرض فكرتك أمام آلاف المستثمرين المحتملين.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Steps -->
+    <section class="progress-steps">
+        <div class="container">
+            <div class="steps">
+                <div class="step active">
+                    <div class="step-number">1</div>
+                    <div class="step-label">معلومات الشركة</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-label">الفيديو والصور</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-label">الفريق والتمويل</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-label">المراجعة والنشر</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="startup-form">
+        <div class="container">
+            <div class="form-container">
+                <form id="startup-profile-form">
+                    <!-- Step 1: Company Information -->
+                    <div class="form-step active" id="step1">
+                        <h2>معلومات الشركة</h2>
+                        <p class="form-intro">أدخل المعلومات الأساسية عن شركتك الناشئة.</p>
+                        
+                        <div class="form-group">
+                            <label for="company-name">اسم الشركة <span class="required">*</span></label>
+                            <input type="text" id="company-name" name="company-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company-tagline">شعار الشركة المختصر <span class="required">*</span></label>
+                            <input type="text" id="company-tagline" name="company-tagline" placeholder="وصف مختصر في جملة واحدة" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company-sector">القطاع <span class="required">*</span></label>
+                                <select id="company-sector" name="company-sector" required>
+                                    <option value="">اختر القطاع</option>
+                                    <option value="technology">التكنولوجيا</option>
+                                    <option value="fintech">التكنولوجيا المالية</option>
+                                    <option value="healthcare">الرعاية الصحية</option>
+                                    <option value="ecommerce">التجارة الإلكترونية</option>
+                                    <option value="education">التعليم</option>
+                                    <option value="sustainability">الاستدامة</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company-stage">مرحلة الشركة <span class="required">*</span></label>
+                                <select id="company-stage" name="company-stage" required>
+                                    <option value="">اختر المرحلة</option>
+                                    <option value="idea">فكرة</option>
+                                    <option value="mvp">نموذج أولي</option>
+                                    <option value="seed">Seed</option>
+                                    <option value="series-a">Series A</option>
+                                    <option value="series-b">Series B</option>
+                                    <option value="series-c">Series C+</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company-city">المدينة <span class="required">*</span></label>
+                                <input type="text" id="company-city" name="company-city" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company-country">الدولة <span class="required">*</span></label>
+                                <select id="company-country" name="company-country" required>
+                                    <option value="">اختر الدولة</option>
+                                    <option value="uae">الإمارات العربية المتحدة</option>
+                                    <option value="ksa">المملكة العربية السعودية</option>
+                                    <option value="egypt">مصر</option>
+                                    <option value="jordan">الأردن</option>
+                                    <option value="qatar">قطر</option>
+                                    <option value="morocco">المغرب</option>
+                                    <option value="lebanon">لبنان</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company-website">الموقع الإلكتروني</label>
+                            <input type="url" id="company-website" name="company-website" placeholder="https://">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company-description">وصف الشركة <span class="required">*</span></label>
+                            <textarea id="company-description" name="company-description" rows="5" placeholder="اشرح فكرة شركتك والمشكلة التي تحلها (200-500 كلمة)" required></textarea>
+                            <div class="char-count"><span id="desc-chars">0</span>/2000 حرف</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>القطاعات الفرعية</label>
+                            <div class="tags-input">
+                                <input type="text" id="tag-input" placeholder="أضف قطاعات فرعية (مثل: الذكاء الاصطناعي، التعلم الآلي)">
+                                <button type="button" id="add-tag">إضافة</button>
+                                <div class="tags-container" id="tags-container"></div>
+                                <input type="hidden" name="company-tags" id="company-tags">
+                            </div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-primary next-step">التالي</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2: Video and Images -->
+                    <div class="form-step" id="step2">
+                        <h2>الفيديو والصور</h2>
+                        <p class="form-intro">أضف فيديو العرض التقديمي وصور شركتك.</p>
+                        
+                        <div class="form-group">
+                            <label for="pitch-video">فيديو العرض التقديمي <span class="required">*</span></label>
+                            <div class="video-upload-container">
+                                <div class="video-upload-area" id="video-upload-area">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <p>اسحب وأفلت ملف الفيديو هنا أو انقر للاختيار</p>
+                                    <p class="upload-note">الحد الأقصى: 100 ميجابايت، الصيغ المدعومة: MP4, MOV, AVI</p>
+                                </div>
+                                <input type="file" id="pitch-video" name="pitch-video" accept="video/*" class="hidden-upload" required>
+                                <div class="video-preview" id="video-preview" style="display: none;">
+                                    <video controls id="video-player"></video>
+                                    <button type="button" class="remove-video" id="remove-video">إزالة</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="video-url">أو رابط الفيديو (YouTube/Vimeo)</label>
+                            <input type="url" id="video-url" name="video-url" placeholder="https://www.youtube.com/watch?v=...">
+                            <p class="field-note">يمكنك تحميل فيديو مباشرة أو إضافة رابط من YouTube أو Vimeo</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company-logo">شعار الشركة <span class="required">*</span></label>
+                            <div class="logo-upload-container">
+                                <div class="logo-upload-area" id="logo-upload-area">
+                                    <i class="fas fa-image"></i>
+                                    <p>اسحب وأفلت الشعار هنا أو انقر للاختيار</p>
+                                    <p class="upload-note">الحد الأقصى: 5 ميجابايت، الصيغ المدعومة: PNG, JPG, SVG</p>
+                                </div>
+                                <input type="file" id="company-logo" name="company-logo" accept="image/*" class="hidden-upload" required>
+                                <div class="logo-preview" id="logo-preview" style="display: none;">
+                                    <img id="logo-image" src="" alt="شعار الشركة">
+                                    <button type="button" class="remove-logo" id="remove-logo">إزالة</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company-images">صور الشركة والمنتج</label>
+                            <div class="images-upload-container">
+                                <div class="images-upload-area" id="images-upload-area">
+                                    <i class="fas fa-images"></i>
+                                    <p>اسحب وأفلت الصور هنا أو انقر للاختيار</p>
+                                    <p class="upload-note">الحد الأقصى: 5 صور، 10 ميجابايت لكل صورة</p>
+                                </div>
+                                <input type="file" id="company-images" name="company-images" accept="image/*" multiple class="hidden-upload">
+                                <div class="images-preview" id="images-preview"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-outline prev-step">السابق</button>
+                            <button type="button" class="btn btn-primary next-step">التالي</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Team and Funding -->
+                    <div class="form-step" id="step3">
+                        <h2>الفريق والتمويل</h2>
+                        <p class="form-intro">أضف معلومات عن فريق العمل والتمويل.</p>
+                        
+                        <div class="form-group">
+                            <label>أعضاء الفريق</label>
+                            <div class="team-members" id="team-members">
+                                <div class="team-member">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="member-name-1">الاسم <span class="required">*</span></label>
+                                            <input type="text" id="member-name-1" name="member-name-1" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="member-position-1">المنصب <span class="required">*</span></label>
+                                            <input type="text" id="member-position-1" name="member-position-1" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="member-bio-1">نبذة مختصرة <span class="required">*</span></label>
+                                        <textarea id="member-bio-1" name="member-bio-1" rows="3" required></textarea>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="member-linkedin-1">LinkedIn</label>
+                                            <input type="url" id="member-linkedin-1" name="member-linkedin-1" placeholder="https://linkedin.com/in/...">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="member-photo-1">الصورة الشخصية</label>
+                                            <input type="file" id="member-photo-1" name="member-photo-1" accept="image/*">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="button" class="btn btn-outline btn-sm" id="add-team-member">
+                                <i class="fas fa-plus"></i> إضافة عضو فريق
+                            </button>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>التمويل</label>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="funding-stage">مرحلة التمويل الحالية</label>
+                                    <select id="funding-stage" name="funding-stage">
+                                        <option value="">اختر المرحلة</option>
+                                        <option value="pre-seed">Pre-Seed</option>
+                                        <option value="seed">Seed</option>
+                                        <option value="series-a">Series A</option>
+                                        <option value="series-b">Series B</option>
+                                        <option value="series-c">Series C+</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="total-funding">إجمالي التمويل السابق</label>
+                                    <div class="input-with-prefix">
+                                        <span class="input-prefix">$</span>
+                                        <input type="number" id="total-funding" name="total-funding" placeholder="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="funding-sought">التمويل المطلوب</label>
+                            <div class="input-with-prefix">
+                                <span class="input-prefix">$</span>
+                                <input type="number" id="funding-sought" name="funding-sought" placeholder="0">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="valuation">التقييم الحالي</label>
+                            <div class="input-with-prefix">
+                                <span class="input-prefix">$</span>
+                                <input type="number" id="valuation" name="valuation" placeholder="0">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="metrics">مؤشرات الأداء الرئيسية</label>
+                            <textarea id="metrics" name="metrics" rows="4" placeholder="أضف مؤشرات الأداء الرئيسية لشركتك (مثل: عدد المستخدمين، معدل النمو، الإيرادات)"></textarea>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-outline prev-step">السابق</button>
+                            <button type="button" class="btn btn-primary next-step">التالي</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4: Review and Publish -->
+                    <div class="form-step" id="step4">
+                        <h2>المراجعة والنشر</h2>
+                        <p class="form-intro">راجع معلومات شركتك قبل النشر.</p>
+                        
+                        <div class="review-section">
+                            <h3>معلومات الشركة</h3>
+                            <div class="review-item">
+                                <span class="review-label">اسم الشركة:</span>
+                                <span class="review-value" id="review-company-name"></span>
+                            </div>
+                            <div class="review-item">
+                                <span class="review-label">القطاع:</span>
+                                <span class="review-value" id="review-company-sector"></span>
+                            </div>
+                            <div class="review-item">
+                                <span class="review-label">المرحلة:</span>
+                                <span class="review-value" id="review-company-stage"></span>
+                            </div>
+                            <div class="review-item">
+                                <span class="review-label">الموقع:</span>
+                                <span class="review-value" id="review-company-location"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="review-section">
+                            <h3>الفيديو والصور</h3>
+                            <div class="review-media">
+                                <div class="review-video" id="review-video"></div>
+                                <div class="review-logo" id="review-logo"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="review-section">
+                            <h3>الفريق</h3>
+                            <div class="review-team" id="review-team"></div>
+                        </div>
+                        
+                        <div class="review-section">
+                            <h3>التمويل</h3>
+                            <div class="review-item">
+                                <span class="review-label">مرحلة التمويل:</span>
+                                <span class="review-value" id="review-funding-stage"></span>
+                            </div>
+                            <div class="review-item">
+                                <span class="review-label">التمويل المطلوب:</span>
+                                <span class="review-value" id="review-funding-sought"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="terms-agree" name="terms-agree" required>
+                                <label for="terms-agree">أوافق على <a href="#" target="_blank">شروط الاستخدام</a> و<a href="#" target="_blank">سياسة الخصوصية</a></label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-note">
+                            <p><i class="fas fa-info-circle"></i> سيتم مراجعة ملف شركتك من قبل فريقنا قبل نشره على المنصة. قد يستغرق ذلك 1-3 أيام عمل.</p>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-outline prev-step">السابق</button>
+                            <button type="submit" class="btn btn-primary">نشر ملف الشركة</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="startup-benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>مزايا إنشاء ملف شركتك على تزايد</h2>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>الوصول إلى المستثمرين</h3>
+                    <p>عرض شركتك أمام أكثر من 10,000 مستثمر نشط يبحثون عن فرص استثمارية واعدة.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>منصة فيديو أولاً</h3>
+                    <p>استفد من منصتنا التي تركز على الفيديو لعرض فكرتك بطريقة جذابة ومؤثرة.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>تحليلات متقدمة</h3>
+                    <p>احصل على تحليلات مفصلة حول أداء ملف شركتك ومستوى اهتمام المستثمرين.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>فرص للتواصل</h3>
+                    <p>تواصل مع المستثمرين المهتمين وشارك في فعاليات حصرية للشركات الناشئة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>أسئلة شائعة</h2>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ما هي المعلومات المطلوبة لإنشاء ملف شركتي؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>تحتاج إلى تقديم معلومات أساسية عن شركتك مثل الاسم والوصف والقطاع، بالإضافة إلى فيديو العرض التقديمي وشعار الشركة ومعلومات عن الفريق والتمويل.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل يمكنني تعديل ملف شركتي بعد النشر؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، يمكنك تعديل ملف شركتك في أي وقت من خلال لوحة التحكم الخاصة بك. ومع ذلك، قد تخضع بعض التغييرات الكبيرة للمراجعة قبل نشرها.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>كم من الوقت يستغرق مراجعة ونشر ملف شركتي؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>عادة ما تستغرق عملية المراجعة 1-3 أيام عمل. نقوم بمراجعة جميع الملفات للتأكد من دقة المعلومات وجودة المحتوى قبل نشرها على المنصة.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل هناك رسوم لإنشاء ملف شركتي على المنصة؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>إنشاء ملف أساسي لشركتك مجاني. ومع ذلك، هناك باقات مدفوعة توفر ميزات إضافية مثل الترويج المميز والوصول إلى مستثمرين محددين وتحليلات متقدمة.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>كيف يمكنني زيادة فرص ظهور شركتي للمستثمرين؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>لزيادة فرص ظهور شركتك، احرص على تقديم فيديو عرض تقديمي احترافي وجذاب، وتوفير معلومات دقيقة ومفصلة عن شركتك وفريقك، وتحديث ملفك بانتظام بأحدث الإنجازات والمؤشرات.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/logo.svg" alt="تزايد" class="footer-logo">
+                    <p>منصة تزايد تربط المستثمرين بالشركات الناشئة الواعدة في الشرق الأوسط وشمال أفريقيا، مع التركيز على الشفافية والأمان.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="companies.html">الشركات</a></li>
+                        <li><a href="investors.html">المستثمرون</a></li>
+                        <li><a href="how-it-works.html">كيف نعمل</a></li>
+                        <li><a href="about-us.html">من نحن</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>القطاعات</h3>
+                    <ul>
+                        <li><a href="#">التكنولوجيا</a></li>
+                        <li><a href="#">الرعاية الصحية</a></li>
+                        <li><a href="#">التكنولوجيا المالية</a></li>
+                        <li><a href="#">التجارة الإلكترونية</a></li>
+                        <li><a href="#">التعليم</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>تواصل معنا</h3>
+                    <p><i class="fas fa-envelope"></i> info@tazayed.com</p>
+                    <p><i class="fas fa-phone"></i> +971 4 123 4567</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 تزايد. جميع الحقوق محفوظة.</p>
+                <div class="footer-legal">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/startup-form.js"></script>
+</body>
+</html>
